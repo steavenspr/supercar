@@ -1,0 +1,16 @@
+body {
+  font-family: "Lora", serif;
+  font-family: "Raleway", sans-serif;
+  background-image: url(/supercar/img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#arriere {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

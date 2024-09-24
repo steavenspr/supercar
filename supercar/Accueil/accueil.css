@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body1 {
+  min-height: 100vh;
+  place-items: center;
+  display: grid;
+  font-weight: 400;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container-car {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #081baa;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://www.topgear.com/sites/default/files/cars-car/image/2018/03/mustang_lightning_blue_009.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://seversbreeman.nl/app/uploads/2022/05/P90461762_highRes_the-new-bmw-m4-csl-n-scaled-e1653039140695.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/US-local/Press-Releases/2022/October-2022/20221003-Q3-Sales/Gentian_Blue_GT3_Touring__013.jpg/jcr:content/Gentian_Blue_GT3_Touring__013.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://www.motortrend.com/uploads/2023/06/2024-Nissan-GT-R-NISMO-front-view-25.jpg?fit=around%7C875:492")
+        no-repeat 50% / cover;
+    }
+
+    .content-car {
+      font-size: 1.5rem;
+      color: #0d0c0c;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(70, 70, 71);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 89, 0.676) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #0022ff;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content-car {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+h1 {
+  font-size: 50%;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  color: #000000;
+}
+.skew-menu {
+  text-align: center;
+  margin-top: 1em;
+  position: sticky;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+header .overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: #30303061;
+}
+
+header video {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header h1 {
+  color: #f1f1f1;
+  font-weight: 800;
+  font-size: 92px;
+  text-shadow: 2px 2px 0px #111;
+  text-transform: uppercase;
+}
+.services-link {
+  color: #eee;
+  font-size: 20px;
+}
+
+.text-shadow {
+  font-style: italic;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: #fff;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 2px 10px #2962ff;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  letter-spacing: 0.2em;
+  -webkit-animation: flicker 0.5s ease-in-out infinite alternate;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+.text-shadow:hover {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .tags small {
+    font-size: 0.5em;
+  }
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px #2962ff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #2962ff;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px #2962ff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #2962ff;
+  }
+}
+#arriere {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
